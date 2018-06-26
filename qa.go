@@ -19,13 +19,14 @@ func main() {
 		userAnswer, _ := reader.ReadString('\n')
 		userAnswer = strings.TrimRight(userAnswer, "\n")
 		if userAnswer == q[1] {
-			fmt.Println("Correct! ", q[0], " is ", userAnswer)
+			fmt.Println("Correct!", q[0], "is", userAnswer)
 		} else {
-			fmt.Println("Wrong! ", q[0], " is  ", q[1])
+			fmt.Println("Wrong!", q[0], "is", q[1])
 		}
 	}
 }
 
+//ParseCsv reads a specified CSV file and returns a 2-D slice
 func parseCsv(file string) ([][]string, error) {
 	f, err := os.Open(file)
 	defer f.Close()
