@@ -2,9 +2,15 @@
 
 Use command `go run filename.go` to run 
 
-##### qa.go
+##### quiz.go
 Shows a simple quiz. This program uses channels, go-routines, command-line flags and select.
 ##### Usage
-`go build qa.go`
+`go build quiz.go`
 
-`./qa --limit 10 --time 5`
+`./quiz --limit 10 --time 5`
+
+##### queue.go
+Implementation of queue datastructure using linkedlist.
+##### Usage
+`go run queue.go`
+
