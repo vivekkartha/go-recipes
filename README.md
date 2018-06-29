@@ -1,6 +1,7 @@
 # Go Recipes
 
-Use command `go run filename.go` to run 
+Use command `go build mainfile.go` to build.
+To run directly use `go run mainfile.go` 
 
 ##### quiz.go
 Shows a simple quiz. This program uses channels, go-routines, command-line flags and select.
