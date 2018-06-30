@@ -1,6 +1,7 @@
 # Go Recipes
 A collection of Go programs ranging from basic datastructures to go-related features
-*** This is an on-going project ***
+
+##### This is an on-going project an updates will be made frequently
 ##### Building Files
 Use command `go build file.go` to build.
 ##### Running tests
