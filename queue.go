@@ -1,5 +1,5 @@
 //Queue using linked-list
-package main
+package queue
 
 import (
 	"bufio"

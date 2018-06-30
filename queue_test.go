@@ -1,4 +1,4 @@
-package main
+package queue
 
 import (
 	"strconv"
@@ -11,7 +11,7 @@ func TestEnqueue(t *testing.T) {
 	for _, v := range inputs {
 		q.Enqueue(v)
 	}
-	//Check if head points to first input and tail to last input
+	//Check if head points to first input and tail to last
 	if q.head.data != inputs[0] && q.tail.data == inputs[len(inputs)-1] {
 		t.Fail()
 	}
