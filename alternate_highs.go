@@ -1,12 +1,13 @@
 package main
 
-//Rearrange to make alternate numbers higher than its neighbors
 import "fmt"
 
 func main() {
 	a := []int{9, 6, 8, 3, 7}
 	reArrange(a)
+	fmt.Println(a)
 }
+
 func reArrange(a []int) {
 	for i := 1; i < len(a); i += 2 {
 		if a[i] < a[i-1] {
@@ -15,7 +16,6 @@ func reArrange(a []int) {
 			swap(a, i, i+1)
 		}
 	}
-	fmt.Println(a)
 }
 
 func swap(a []int, i int, j int) {
